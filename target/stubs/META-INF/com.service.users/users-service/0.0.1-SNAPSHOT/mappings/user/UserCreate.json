@@ -1,0 +1,29 @@
+{
+  "id" : "e1c12635-9d87-46b8-a341-3c0fb402851a",
+  "request" : {
+    "url" : "/users",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      },
+      "Accept" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['username'] == 'admin')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['password'] == '123456')]"
+    } ]
+  },
+  "response" : {
+    "status" : 201,
+    "body" : "{\"username\":\"admin\",\"password\":\"123456\"}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "e1c12635-9d87-46b8-a341-3c0fb402851a"
+}

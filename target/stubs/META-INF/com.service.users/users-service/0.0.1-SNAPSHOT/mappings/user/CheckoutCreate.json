@@ -1,0 +1,33 @@
+{
+  "id" : "f91e7e67-87d1-4cee-beda-9f8ff1003de4",
+  "request" : {
+    "url" : "/checkout",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      },
+      "Accept" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['orderId'] == '5000')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['userId'] == '1')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['status'] == 'true')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['orderDate'] == '2020-09-01')]"
+    } ]
+  },
+  "response" : {
+    "status" : 201,
+    "body" : "{\"checkoutId\":0,\"orderId\":5000,\"userId\":1,\"status\":true,\"orderDate\":\"2020-09-01T00:00:00.000+00:00\"}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "f91e7e67-87d1-4cee-beda-9f8ff1003de4"
+}

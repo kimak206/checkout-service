@@ -1,0 +1,7 @@
+META-INF\com.service.users\users-service\0.0.1-SNAPSHOT\contracts\user\CheckoutGetNotFound.groovy
+META-INF\com.service.users\users-service\0.0.1-SNAPSHOT\contracts\user\UserCreate.groovy
+META-INF\com.service.users\users-service\0.0.1-SNAPSHOT\contracts\user\UserGet.groovy
+META-INF\com.service.users\users-service\0.0.1-SNAPSHOT\mappings\user\CheckoutGetNotFound.json
+META-INF\com.service.users\users-service\0.0.1-SNAPSHOT\mappings\user\CheckoutCreate.json
+META-INF\com.service.users\users-service\0.0.1-SNAPSHOT\mappings\user\UserCreate.json
+META-INF\com.service.users\users-service\0.0.1-SNAPSHOT\contracts\user\CheckoutCreate.groovy

@@ -1,0 +1,24 @@
+{
+  "id" : "3552ab3f-9439-4b27-a6e9-36ff3ecc2dea",
+  "request" : {
+    "url" : "/checkout/get/1",
+    "method" : "GET",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      },
+      "Accept" : {
+        "matches" : "application/json.*"
+      }
+    }
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "Not Found!",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "3552ab3f-9439-4b27-a6e9-36ff3ecc2dea"
+}

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.service.users.verifier.UserTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.933 s <<< FAILURE! - in com.service.users.verifier.UserTest
+validate_checkoutCreate  Time elapsed: 0.047 s  <<< ERROR!
+java.lang.IllegalStateException: Parsed JSON [{"checkoutId":1,"orderId":5000,"userId":1,"status":true,"orderDate":"2020-09-01T00:00:00.000+00:00"}] doesn't match the JSON path [$[?(@.['checkoutId'] == 0)]]
+	at com.service.users.verifier.UserTest.validate_checkoutCreate(UserTest.java:37)
+
