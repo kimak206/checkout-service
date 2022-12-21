@@ -26,7 +26,7 @@ Contract.make {
         status CREATED()
         body("""
          {
-            "checkoutId": 0,
+            "checkoutId": 1,
             "orderId": 5000,
             "userId": 1,
             "status": true,

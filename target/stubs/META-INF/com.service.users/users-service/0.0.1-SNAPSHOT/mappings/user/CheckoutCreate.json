@@ -1,5 +1,5 @@
 {
-  "id" : "f91e7e67-87d1-4cee-beda-9f8ff1003de4",
+  "id" : "0a525b84-2438-4e69-b2de-4d93b152a094",
   "request" : {
     "url" : "/checkout",
     "method" : "POST",
@@ -23,11 +23,11 @@
   },
   "response" : {
     "status" : 201,
-    "body" : "{\"checkoutId\":0,\"orderId\":5000,\"userId\":1,\"status\":true,\"orderDate\":\"2020-09-01T00:00:00.000+00:00\"}",
+    "body" : "{\"checkoutId\":1,\"orderId\":5000,\"userId\":1,\"status\":true,\"orderDate\":\"2020-09-01T00:00:00.000+00:00\"}",
     "headers" : {
       "Content-Type" : "application/json"
     },
     "transformers" : [ "response-template", "spring-cloud-contract" ]
   },
-  "uuid" : "f91e7e67-87d1-4cee-beda-9f8ff1003de4"
+  "uuid" : "0a525b84-2438-4e69-b2de-4d93b152a094"
 }

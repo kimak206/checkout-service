@@ -34,7 +34,7 @@ public class UserTest extends UsersVerifierTest {
 
 		// and:
 			DocumentContext parsedJson = JsonPath.parse(response.getBody().asString());
-			assertThatJson(parsedJson).field("['checkoutId']").isEqualTo(0);
+			assertThatJson(parsedJson).field("['checkoutId']").isEqualTo(1);
 			assertThatJson(parsedJson).field("['orderId']").isEqualTo(5000);
 			assertThatJson(parsedJson).field("['userId']").isEqualTo(1);
 			assertThatJson(parsedJson).field("['status']").isEqualTo(true);
