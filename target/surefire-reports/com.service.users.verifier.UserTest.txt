@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.service.users.verifier.UserTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.523 s - in com.service.users.verifier.UserTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.468 s - in com.service.users.verifier.UserTest
